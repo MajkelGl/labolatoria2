@@ -1,7 +1,6 @@
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
-
 public class ArrayLinkedList {
     public static void main(String[] args) {
         int numberOfElements = 1000; // Możesz dostosować tę wartość do swoich potrzeb.
