@@ -36,8 +36,8 @@ public class Persons {
         PeopleList.add(new Person("Paweł", 22));
         PeopleList.add(new Person("Zbigniew", 21));
         Comparator<Person> AgeComparator = new Comparator<Person>() {
-            public int compare(Person o1, Person o2) {
-                return Integer.compare(o1.getAge(), o2.getAge());
+            public int compare(Person p1, Person p2) {
+                return Integer.compare(p1.getAge(), p2.getAge());
             }
         };
 
