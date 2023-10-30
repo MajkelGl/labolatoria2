@@ -3,26 +3,21 @@ import java.util.LinkedList;
 import java.util.List;
 public class ArrayLinkedList {
     public static void main(String[] args) {
-        int numberOfElements = 1000; // Możesz dostosować tę wartość do swoich potrzeb.
+        printing(1000);
+        printing(1000000);
+    }
 
+    public static void printing(int size){
         List<Integer> arrayList = new ArrayList<>();
         List<Integer> linkedList = new LinkedList<>();
 
-        long arrayListExecutionTime = measureListOperations(arrayList, numberOfElements);
-        long linkedListExecutionTime = measureListOperations(linkedList, numberOfElements);
+        long arrayListExecutionTime = measureListOperations(arrayList, size);
+        long linkedListExecutionTime = measureListOperations(linkedList, size);
 
-        System.out.println("Czas wykonania operacji dla " + numberOfElements + " elementów");
+        System.out.println("Czas wykonania operacji dla " + size + " elementów");
         System.out.println("Czas wykonania operacji na ArrayList: " + arrayListExecutionTime + " nanosekund");
         System.out.println("Czas wykonania operacji na LinkedList: " + linkedListExecutionTime + " nanosekund\n");
 
-        numberOfElements = 100000;
-
-        arrayListExecutionTime = measureListOperations(arrayList, numberOfElements);
-        linkedListExecutionTime = measureListOperations(linkedList, numberOfElements);
-
-        System.out.println("Czas wykonania operacji dla " + numberOfElements + " elementów");
-        System.out.println("Czas wykonania operacji na ArrayList: " + arrayListExecutionTime + " nanosekund");
-        System.out.println("Czas wykonania operacji na LinkedList: " + linkedListExecutionTime + " nanosekund");
     }
 
     //Uzupełnienie list elementami
