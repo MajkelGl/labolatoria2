@@ -27,11 +27,11 @@ class Car {
 
 public class CarComparator {
     public static void main(String[] args) {
-        printing();
+        RunningApp();
     }
 
 
-    public static void printing() {
+    public static void RunningApp() {
         List<Car> cars = new ArrayList<>();
         cars.add(new Car("Toyota", "Yaris", 2005));
         cars.add(new Car("Ford", "Mustang", 2015));

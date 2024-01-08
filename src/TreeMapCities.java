@@ -2,12 +2,12 @@ import java.util.*;
 
 public class TreeMapCities {
     public static void main(String[] args) {
-        printing();
+        RunningApp();
     }
-        public static void printing(){
+        public static void RunningApp(){
 
         // Tworzenie mapy TreeMap z nazwami miast i ilościami ludności
-        TreeMap<String, Integer> cityPopulationMap = new TreeMap<>();
+        Map<String, Integer> cityPopulationMap = new TreeMap<>();
 
         // Dodawanie danych do mapy
         cityPopulationMap.put("Warszawa", 1861975);
@@ -26,7 +26,7 @@ public class TreeMapCities {
         };
 
         // Tworzenie posortowanej mapy za pomocą komparatora
-        TreeMap<String, Integer> sortedCityPopulationMap = new TreeMap<>(populationComparator);
+        Map<String, Integer> sortedCityPopulationMap = new TreeMap<>(populationComparator);
         sortedCityPopulationMap.putAll(cityPopulationMap);
 
         // Wyświetlanie posortowanej mapy

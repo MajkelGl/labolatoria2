@@ -23,10 +23,10 @@ class Person {
 
 public class Persons {
     public static void main(String[] args) {
-        printing();
+        RunningApp();
     }
 
-    public static void printing(){
+    public static void RunningApp(){
         List<Person> PeopleList = new ArrayList<>();
         PeopleList.add(new Person("Anna", 30));
         PeopleList.add(new Person("Marek", 30));

@@ -3,11 +3,11 @@ import java.util.LinkedList;
 import java.util.List;
 public class ArrayLinkedList {
     public static void main(String[] args) {
-        printing(1000);
-        printing(1000000);
+        RunningApp(1000);
+        RunningApp(1000000);
     }
 
-    public static void printing(int size){
+    public static void RunningApp(int size){
         List<Integer> arrayList = new ArrayList<>();
         List<Integer> linkedList = new LinkedList<>();
 
